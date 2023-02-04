@@ -59,7 +59,7 @@ NetworkManager 生效的配置在文件 /etc/sysconfig/network-scripts/ifcfg-Ifa
 
 在上面的 `/etc/sysconfig/network-scripts/ifcfg-ens18` 列出， 我们看到 `BOOTPROTO` 参数值设置为 ` none`。 这意味着正在配置的系统已设置为静态IP地址方案。
 
-如果你想要配置系统使用动态IP地址方案。 您必须将 `BOOTPROTO` 参数的值从 `no` 更改为 `dhcp` 并删除 `IPADRD` `PREFIX` 和 `GATEWAY` 行. 这是必要的，因为所有这些信息都将自动从任何可用的DHCP服务器获取。
+如果你想要配置系统使用动态IP地址方案。 您必须将 `BOOTPROTO` 参数的值从 `none` 更改为 `dhcp` 并删除 `IPADDR` `PREFIX` 和 `GATEWAY` 行. 这是必要的，因为所有这些信息都将自动从任何可用的DHCP服务器获取。
 
 要配置静态IP地址属性，请设置以下内容：
 
